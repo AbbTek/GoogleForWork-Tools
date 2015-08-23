@@ -1,0 +1,66 @@
+﻿<br />
+<br />
+<div style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <img style="height:120px;width:108px" src="https://googledrive.com/host/0B6tq4qP1JS2Zfm52ZV84X2pzMm9PUGFEQzZiSUdaaHRBai0teTVJQzUxZVJrbjlRRW1GWjA/Images/logo-RMA.png" alt="Logo-RMA" />
+                    <div>
+                        <a href="https://www.facebook.com/CrossfitRevolute" style="text-decoration:none">
+                            <img src="https://googledrive.com/host/0B6tq4qP1JS2Zfm52ZV84X2pzMm9PUGFEQzZiSUdaaHRBai0teTVJQzUxZVJrbjlRRW1GWjA/Images/logo-facebook.png"/>
+                        </a>
+                        <a href="http://instagram.com/revolutemovementacademy" style="text-decoration:none">
+                            <img src="https://googledrive.com/host/0B6tq4qP1JS2Zfm52ZV84X2pzMm9PUGFEQzZiSUdaaHRBai0teTVJQzUxZVJrbjlRRW1GWjA/Images/logo-instagram.png" />
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div>
+                            <strong>@Model.Name.FullName</strong>
+                        </div>
+                        <div>
+                            @if (Model.Organizations != null) {
+                            <span style="font-style:italic">
+                                @Model.Organizations[0].title
+                            </span>
+                            }
+                        </div>
+                        <div style="margin-top:5px">
+                            <span>Revolute Movement Academy</span>
+                        </div>
+                        <div>
+                            <span>22-24 Bermill St, Rockdale, NSW 2216</span>
+                        </div>
+                        <div style="margin-top:5px">
+                            <span>
+                                <a href="tel:+61295999237" style="text-decoration:none">
+                                    <img style="height:20px" src="https://googledrive.com/host/0B6tq4qP1JS2Zfm52ZV84X2pzMm9PUGFEQzZiSUdaaHRBai0teTVJQzUxZVJrbjlRRW1GWjA/Images/icon-landline.png" />
+                                    (02) 9599 9237
+                                </a>
+                            </span>
+                            @if (Model.Phones != null) {
+                            <span>
+                                 <a href="tel:@Model.Phones[0].value.ToString().Replace(" ","")" style="text-decoration:none">
+                                     <img style="height:20px" src="https://googledrive.com/host/0B6tq4qP1JS2Zfm52ZV84X2pzMm9PUGFEQzZiSUdaaHRBai0teTVJQzUxZVJrbjlRRW1GWjA/Images/icon-mobile.png" />
+                                     @Model.Phones[0].value
+                                 </a>
+                            </span>
+                            }
+                        </div>
+                        <div>
+                            <a style="color:red;text-decoration:none" href="http://revolute.academy">revolute.academy</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="text-align:left;">
+        <span style="font-size:8.0pt;color:gray">
+            This e-mail message may contain confidential or legally privileged information and is intended only for the use of the intended recipient(s). Any unauthorized disclosure, dissemination, distribution, copying or the taking of any action in reliance on the information herein is prohibited. E-mails are not secure and cannot be guaranteed to be error free as they can be intercepted, amended, or contain viruses. Anyone who communicates with us by e-mail is deemed to have accepted these risks. Revolution MindBody Spirit Pty Ltd. is not responsible for errors or omissions in this message and denies any responsibility for any damage arising from the use of e-mail. Any opinion and other statement contained in this message and any attachment are solely those of the author and do not necessarily represent those of the company.
+        </span>
+    </p>
+</div>
